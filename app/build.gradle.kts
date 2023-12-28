@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.sergeikrainyukov.gymtracker"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -62,14 +62,15 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.navigation:navigation-runtime-ktx:2.7.6")
-    implementation("com.google.accompanist:accompanist-pager:0.33.2-alpha")
     implementation("androidx.compose.runtime:runtime-livedata:1.5.4")
-    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
 
     //Room
-    implementation ("androidx.room:room-runtime:2.6.1")
+    implementation("androidx.room:room-runtime:2.6.1")
     ksp("androidx.room:room-compiler:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
+
+    implementation ("com.github.mateusz800:Expandable-Compose-Calendar:1.0.0")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
